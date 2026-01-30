@@ -1,0 +1,1 @@
+osource "$PKGS_DIR/gd32vw55x-wifi/Kconfig"

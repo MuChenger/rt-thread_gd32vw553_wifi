@@ -1,0 +1,30 @@
+{
+    "name": "gd32vw55x-wifi",
+    "description": "GD32VW55x WIFI driver package for RT-Thread",
+    "version": "1.0.0",
+    "keywords": [
+        "wifi",
+        "gd32",
+        "gd32vw55x",
+        "wireless",
+        "802.11"
+    ],
+    "author": {
+        "name": "GigaDevice",
+        "email": "support@gigadevice.com"
+    },
+    "license": "BSD-3-Clause",
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "category": "peripherals",
+    "platform": [
+        "gd32vw553h"
+    ],
+    "dependencies": {
+        "RT_USING_LWIP": ">=2.0.0",
+        "RT_USING_DFS": ">=1.0.0"
+    },
+    "readme": "README.md"
+}
