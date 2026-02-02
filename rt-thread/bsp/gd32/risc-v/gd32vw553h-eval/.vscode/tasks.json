@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "startOpenOCD",
+            "type": "shell",
+            "command": "E:/GD32/GD32VW5/GD32EmbeddedBuilder_v1.5.4_Rel/Tools/OpenOCD/xpack-openocd-0.11.0-3/bin/openocd",
+            "args": [
+                "-f", "${workspaceFolder}/openocd_gdlink.cfg"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "problemMatcher": [],
+            "isBackground": true
+        }
+    ]
+}

@@ -53,7 +53,7 @@ if PLATFORM == 'gcc':
     # C Compilation Parameters
     CFLAGS = DEVICE + ' -std=gnu11 -DUSE_STDPERIPH_DRIVE -save-temps=obj'
     # Assembly Compilation Parameters
-    AFLAGS = DEVICE + '-c'+ ' -x assembler-with-cpp'
+    AFLAGS = DEVICE + '-c'+ ' -x assembler-with-cpp '
     # Linking Parameters
     # 添加 --no-warn-mismatch 以忽略预编译库与当前工具链的特权规范版本差异
     # 添加 WiFi ROM 符号表

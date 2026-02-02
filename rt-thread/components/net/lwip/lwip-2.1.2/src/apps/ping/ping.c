@@ -136,7 +136,7 @@ int lwip_ping_recv(int s, int *ttl)
 rt_err_t ping(char* target_name, rt_uint32_t times, rt_size_t size)
 {
 #if LWIP_VERSION_MAJOR >= 2U
-    struct timeval timeout = { PING_RCV_TIMEO / RT_TICK_PER_SECOND, PING_RCV_TIMEO % RT_TICK_PER_SECOND };
+    struct timeval timeout = { PING_RCV_TIMEO / RT_TICK_PER_SECOND * 1000, PING_RCV_TIMEO % RT_TICK_PER_SECOND };
 #else
     int timeout = PING_RCV_TIMEO * 1000UL / RT_TICK_PER_SECOND;
 #endif
