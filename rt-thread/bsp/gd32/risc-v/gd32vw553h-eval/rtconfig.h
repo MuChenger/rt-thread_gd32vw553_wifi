@@ -94,9 +94,10 @@
 
 #define RT_USING_MEMPOOL
 #define RT_USING_SMALL_MEM
+#define RT_USING_MEMHEAP
+#define RT_MEMHEAP_FAST_MODE
 #define RT_USING_SMALL_MEM_AS_HEAP
 #define RT_USING_HEAP
-#define RT_USING_MEMHEAP
 /* end of Memory Management */
 #define RT_USING_DEVICE
 #define RT_USING_CONSOLE
@@ -163,8 +164,6 @@
 #define RT_WLAN_PROT_NAME_LEN 8
 #define RT_WLAN_PROT_MAX 2
 #define RT_WLAN_DEFAULT_PROT "lwip"
-//#define RT_WLAN_PROT_LWIP_ENABLE
-//#define RT_WLAN_PROT_LWIP_NAME "lwip"
 #define RT_WLAN_WORK_THREAD_ENABLE
 #define RT_WLAN_WORKQUEUE_THREAD_NAME "wlan"
 #define RT_WLAN_WORKQUEUE_THREAD_SIZE 2048
@@ -360,6 +359,59 @@
 /* Kendryte SDK */
 
 /* end of Kendryte SDK */
+
+/* WCH HAL & SDK Drivers */
+
+/* end of WCH HAL & SDK Drivers */
+
+/* AT32 HAL & SDK Drivers */
+
+/* end of AT32 HAL & SDK Drivers */
+
+/* HC32 DDL Drivers */
+
+/* end of HC32 DDL Drivers */
+
+/* NXP HAL & SDK Drivers */
+
+/* end of NXP HAL & SDK Drivers */
+
+/* NUVOTON Drivers */
+
+/* end of NUVOTON Drivers */
+
+/* GD32 Drivers */
+
+#define PKG_USING_GD32VW55X_WIFI
+#define GD32VW55X_WIFI_STATION_MODE
+#define GD32VW55X_WIFI_SOFTAP_MODE
+
+/* Security Configuration */
+
+#define GD32VW55X_WIFI_WPA_SECURITY
+/* end of Security Configuration */
+
+/* Advanced Configuration */
+
+#define GD32VW55X_WIFI_TASK_STACK_SIZE 4096
+#define GD32VW55X_WIFI_TASK_PRIORITY 10
+#define GD32VW55X_WIFI_RX_BUFFER_SIZE 1600
+#define GD32VW55X_WIFI_MAX_SCAN_RESULTS 32
+/* end of Advanced Configuration */
+
+/* Power Management */
+
+/* end of Power Management */
+#define PKG_USING_GD32VW55X_WIFI_LATEST_VERSION
+/* end of GD32 Drivers */
+
+/* HPMicro SDK */
+
+/* end of HPMicro SDK */
+
+/* FT32 HAL & SDK Drivers */
+
+/* end of FT32 HAL & SDK Drivers */
 /* end of HAL & SDK Drivers */
 
 /* sensors drivers */
@@ -452,24 +504,15 @@
 #define BSP_WLAN_SSID_MAX_LENGTH 32
 #define BSP_WLAN_PASSWORD_MAX_LENGTH 64
 #define BSP_WLAN_SCAN_CACHE_NUM 16
-#define PKG_USING_GD32VW55X_WIFI
 
 /* GD32VW55x WIFI Configuration */
 
-#define GD32VW55X_WIFI_STATION_MODE
-#define GD32VW55X_WIFI_SOFTAP_MODE
-
 /* Security Configuration */
 
-#define GD32VW55X_WIFI_WPA_SECURITY
 /* end of Security Configuration */
 
 /* Advanced Configuration */
 
-#define GD32VW55X_WIFI_TASK_STACK_SIZE 4096
-#define GD32VW55X_WIFI_TASK_PRIORITY 10
-#define GD32VW55X_WIFI_RX_BUFFER_SIZE 1600
-#define GD32VW55X_WIFI_MAX_SCAN_RESULTS 32
 /* end of Advanced Configuration */
 
 /* Power Management */
