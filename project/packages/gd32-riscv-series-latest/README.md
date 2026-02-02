@@ -1,1 +1,0 @@
-# gd32-risc-v-series
